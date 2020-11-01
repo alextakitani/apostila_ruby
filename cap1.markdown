@@ -97,6 +97,27 @@ Supondo que as variáveis a == 10 e b == 20
 |%|	Modulo − Divide a por b e devolve o resto|	b % a => 0
 |**	|Potência |	a**b => 100000000000000000000
 
+**Comparação**
+
+|Operador|	Descrição| Exemplo|
+|--|--|--|
+|==|	Equalidade, retorna true ou false |	1==1 => true |
+|.eql?|	Equalidade, retorna true ou false |	1.eql? 4 => false |
+|!=|	Diferença retorna true ou false |	5 != 5 => false |
+|<|	Menor que |	5 < 10 => true |
+|>|	Maior que |	5 > 10 => false |
+|<=|Menor ou igual a |	5 <= 5 => true |
+|>=|	Maior ou igual a |	10 >= 1 => true |
+|<=>|Comparação combinada. |	5 <=> 10 => -1 |
+
+Cabe explicar melhor o operador de Comparação combinada.
+
+Ele compara 2 valores e: retorna 0 se forem iguais.
+
+1 se o primeiro for maior que o segundo e -1 se o segundo for maior que o primeiro.
+
+
+
 ## Estruturas de Controle
 **Condicionais**
 
@@ -194,3 +215,32 @@ E o programa vai continuar repetindo até que **num** seja 3. Como 3 não é mai
 ```
 
 Existem 2 modificações que darão o mesmo resultado, você consegue descobrir quais?
+
+**until** - ( até que ) Executa a instrução até que a condição seja verdadeira.
+
+O until se comporta como o while, com a diferença que a condição deve ser verdadeira.
+
+Enquanto pensamos no while como "repita isso até que a condição x não seja mais verdade", no until pensamos "faça isso até que a condição seja alcançada".
+
+```
+num = 0
+until num == 3 do
+   puts num
+   num += 1
+end
+```
+O trecho de código acima vai resultar na seguinte saída:
+
+```
+0
+1
+2
+```
+
+Reparou como é a mesma coisa porém escrita de forma diferente? O Ruby tem vários conceitos repetidos, porém com escrita diferente.
+
+Algumas pessoas questionam a existência dessas coisas, dizendo que ter mais de uma forma de representar a mesma coisa gera confusão.
+
+Eu discordo. Assim como os idiomas, as linguagens de programação são feitas para transmitir idéias.
+
+E existem muitas maneiras de dizer as coisas, quando e como dizer fica a critério de as trasmite.
